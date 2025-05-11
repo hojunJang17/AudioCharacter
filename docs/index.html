@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Audio-aided Character Control</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://fonts.googleapis.com/css?family=Architects Daughter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/bulma_toggle.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5fd1dd8417.js" crossorigin="anonymous"></script>
+
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="apple-touch-icon" sizes="96x96" href="./assets/favicon-96x96.png"/>
+    <link rel="icon" sizes="48x48" href="./assets/favicon-48x48.png"/>
+    <link rel="icon" sizes="24x24" href="./assets/favicon-24x24.png"/>
+  </head>
+
+  <body>
+
+    <!-- title / authors / icons -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-widescreen has-text-centered">
+          <!-- title -->
+          <h1 class="title is-size-1 is-size-2-mobile publication-title">
+            Audio-aided Character Control <br>for Inertial Measurement Tracking
+          </h1>
+          <div class="is-size-4-tablet publication-institute">
+            <span class="author-block">Eurographics 2025 Short Paper<br/></span>
+          </div>
+
+          <!-- authors -->
+          <div class="container is-max-desktop has-text-centered author-list">
+            <div class="columns is-mobile is-centered is-gapless">
+              <div class="column is-2-tablet is-size-5-tablet publication-authors">
+                <a class="author-blocks" href="https://hojunjang17.github.io">Hojun Jang</a>
+              </div>
+              <div class="column is-2-tablet is-size-5-tablet publication-authors">
+                <a class="author-blocks" href="https://jinseokbae.github.io/">Jinseok Bae</a>
+              </div>
+              <div class="column is-2-tablet is-size-5-tablet publication-authors">
+                <a class="author-blocks" href="http://3d.snu.ac.kr/members">Young Min Kim</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="is-size-5-tablet publication-institute">
+            <span class="author-block">Seoul National University</span>
+          </div>
+          
+          <div class="logo-list">
+            <a class="lab-logo" href="https://3d.snu.ac.kr">
+              <img src="./assets/3dv.png">
+            </a>
+          </div>
+
+          <!-- icons -->
+          <div class="is-size-5 link-blocks">
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="fa-solid fa-file"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+            <!--
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+          -->
+            <!--
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span>Video</span>
+            </a>
+            -->
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code (soon)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- teasor -->
+    <section class="hero">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <img src="./assets/teaser.png" width="100%" style="display: block; margin-bottom: 20px;" />
+          <h2 class="tldr">
+            <i>Audio signals provide valuable information for locomotion tasks, synchronizing the footsteps.</i>
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
+          <h2 class="subtitle is-size-3 publication-keywords">
+            Abstract
+          </h2>
+          <div class="content has-text-justified">
+            <p>
+              Physics-based character control generates realistic motion dynamics by leveraging kinematic priors from large-scale data within a simulation engine.
+              The simulated motion respects physical plausibility, while dynamic cues like contacts and forces guide compelling human-scene interaction.
+              However, leveraging audio cues, which can capture physical contacts in a cost-effective way, has been less explored in animating human motions.
+              In this work, we demonstrate that audio inputs can enhance accuracy in predicting footsteps and capturing human locomotion dynamics.
+              Experiments validate that audio-aided control from sparse observations (e.g., an IMU sensor on a VR headset) enhances the prediction accuracy of contact dynamics and motion tracking, offering a practical auxiliary signal for robotics, gaming, and virtual environments.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 publication-keywords">
+            Video (todo)
+          </h2>
+        </div>
+        <div class="publication-video">
+          <iframe
+            src="https://www.youtube.com/embed/7mWPYGRfk-I?si=x0xlB16kK1TOXN_I"
+            allow="autoplay; encrypted-media"
+            allowfullscreen="true"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+-->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
+          <h2 class="subtitle is-size-3 publication-keywords">
+            Method
+          </h2>
+          <img src="./assets/method.png" width="80%" style="display: block; margin: auto;"/>
+        </div>
+          <p class="normal-text has-text-justified">
+            We use a 2-stage training pipeline.
+            We first pretrain the motion imitation policy with the large-scale motion dataset.
+            We then leverage the codebook and the decoder of the pretrained imitation policy to train our audio-aided high-level policy.
+            The high-level policy takes footstep audio and the head-mounted IMU data as an observation to make good latent code for the character control.
+          </p>
+
+          <br>
+
+          <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
+            <img src="./assets/audio_features.png" width="70%" style="display: block; margin: auto;"/>
+          </div>
+          <p class="normal-text has-text-justified">
+            Given the audio sigal, <b>Root Mean Squared Energy (RMSE)</b> is the most straightforward feature we can extract from the signal.
+            It simply captures the amplitude of the signal.
+            <b>Onset strength</b> focuses on detecting the start of individual events, so that they are good for beat and transient detection.
+            Finally, <b>Mel-Frequency Cepstral Coefficients (MFCCs)</b> are coefficients of the short term power spectrum in mel-frequency domain.
+            MFCCs contain the largest amount of information but the footstep timings are not easily recognizable.
+            Onset strength is relatively more sensitive than RMSE in detecting the local peaks, which may correspond to the contact moment.
+          </p>
+      </div>
+    </section>
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="column is full-width is-centered has-text-centered">
+            <h2 class="subtitle is-size-3 publication-keywords">
+              Results
+            </h2>
+          </div>
+          <p align="left" class="normal-text has-text-justified">
+            We show the results of our model using onset strength as an audio feature.
+            <font color='blue'>Blue character</font> is the controlled RL agent and <font color='gray'>white character</font> shows the ground truth motion.
+            Our model better matches the footstep timings, when compared to the results that only uses IMU data without auxiliary audio signal.
+            Even when the agent fails to closely follow the position of the reference motion, the agent makes the footstep when the audio peak is made.
+          </p>
+          <video controls playsinline width="49.8%">
+            <source src="./assets/results/sample_67_w_audio_concat.mp4" type="video/mp4">
+          </video>
+          <video controls playsinline width="49.8%">
+            <source src="./assets/results/sample_67_wo_audio_concat.mp4" type="video/mp4">
+          </video>
+
+          <br>
+          <br>
+          <br>
+
+          <video controls playsinline width="49.8%">
+            <source src="./assets/results/sample_70_w_audio.mp4" type="video/mp4">
+          </video>
+          <video controls playsinline width="49.8%">
+            <source src="./assets/results/sample_70_wo_audio.mp4" type="video/mp4">
+          </video>
+          <table align="center" width="100%" style='font-family:"Zen Maru Gothic", serif'>
+            <tr>
+              <th style="text-align:center; width:50%">Audio-aided Character Control</th>
+              <th style="text-align:center; width:50%">Character Control without Audio</th>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+
+    <!-- BibTex sectoion -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
+          <h2 class="subtitle is-size-3 publication-keywords">BibTeX</h2>
+        </div>
+        <div class="box bibtex-box">
+          <pre>
+@inproceedings{jang2025egs,
+  title = {Audio-aided Character Control for Inertial Measurement Tracking},
+  author = {Jang, Hojun and Bae, Jinseok and Kim, Young Min},
+  booktitle = {Eurographics 2025 - Short Papers},
+  year = {2025},
+}
+</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer" style="padding-top: 1rem">
+      <!-- navigation -->
+      <a role="button" class="navbar-burger" data-target="moreResearch" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="navbar-menu" id="moreResearch">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center">
+          <div class="block is-flex" style="margin-bottom: 0px">
+            <a class="navbar-item" href="https://hojunjang17.github.io">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+            </a>
+            <a class="navbar-item" href="https://github.com/hojunJang17">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- license -->
+      <div class="content has-text-centered" style="margin-top: 1.6rem">
+        <p>
+          This website is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+            >Creative Commons Attribution-ShareAlike 4.0 International License</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+
+</html>
